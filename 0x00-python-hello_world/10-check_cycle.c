@@ -15,10 +15,10 @@ int check_cycle(listint_t *list)
 
 	while (tmp && new_tmp && new_tmp->next)
 	{
-		if (tmp == new_tmp)
-			return (1);
 		tmp = tmp->next;
 		new_tmp = new_tmp->next->next;
+		if (tmp == new_tmp)
+			return (1);
 	}
 	return (0);
 }
