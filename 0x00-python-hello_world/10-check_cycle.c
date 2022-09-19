@@ -15,6 +15,9 @@ int check_cycle(listint_t *list)
 	if (list == NULL || list->next == NULL)
 		return (0);
 
+	link = list->next;
+	last = last->next->next;
+
 	while (link && last && last->next)
 	{
 		if (link == last)
