@@ -19,6 +19,7 @@ int check_cycle(listint_t *list)
 	{
 		if (link == last)
 			return (1);
+
 		link = link->next;
 		last = last->next->next;
 	}
