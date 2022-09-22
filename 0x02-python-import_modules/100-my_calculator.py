@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-from sys import argv
-if len(argv) != 4:
-    print("Usage: {} <a> <operator> <b>".format(argv[0]))
-    exit(1)
-
 if __name__ == "__main__":
-    from calculator_1 import add, sub, mul, div
+    from sys import argv
+    from calculator_1 import add, sub, div, mul
 
-    operators = ['+', '/', '-', '*']
+    if len(argv) != 4:
+        print("Usage: {} <a> <operator> <b>".format(argv[0]))
+        exit(1)
+
+    operators = ['+', '*', '-', '/']
     if argv[2] not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
@@ -16,9 +16,9 @@ if __name__ == "__main__":
     first = int(argv[1])
     second = int(argv[3])
 
-    if argv[2] == '+':
-        summ = add(first, second)
-        print("{} + {} = {}".format(first, second, summ))
+    if argv[2] == '*':
+        prod = mul(first, second)
+        print("{} * {} = {}".format(first, second, prod))
 
     elif argv[2] == '/':
         quotient = div(first, second)
@@ -29,5 +29,5 @@ if __name__ == "__main__":
         print("{} - {} = {}".format(first, second, difference))
 
     else:
-        product = mul(first, second)
-        print("{} * {} = {}".format(first, second, product))
+        summ = add(first, second)
+        print("{} + {} = {}".format(first, second, summ))
