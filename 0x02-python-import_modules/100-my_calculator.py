@@ -7,7 +7,7 @@ if len(argv) != 4:
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
-    operators = ['+', '/', '*', '-']
+    operators = ['+', '/', '-', '*']
     if argv[2] not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
@@ -20,14 +20,14 @@ if __name__ == "__main__":
         summ = add(first, second)
         print("{} + {} = {}".format(first, second, summ))
 
-    if argv[2] == '/':
+    elif argv[2] == '/':
         quotient = div(first, second)
         print("{} / {} = {}".format(first, second, quotient))
 
-    if argv[2] == '-':
+    elif argv[2] == '-':
         difference = sub(first, second)
         print("{} - {} = {}".format(first, second, difference))
 
-    if argv[2] == '*':
+    else:
         product = mul(first, second)
         print("{} * {} = {}".format(first, second, product))
