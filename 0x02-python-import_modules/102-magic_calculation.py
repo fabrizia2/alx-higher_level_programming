@@ -5,7 +5,7 @@ def magic_calculation(a, b):
     if a < b:
         summ = add(a, b)
         for num in range(4, 6):
-            summ = add(c, num)
+            summ = add(summ, num)
         return (summ)
     else:
         return (sub(a, b))
