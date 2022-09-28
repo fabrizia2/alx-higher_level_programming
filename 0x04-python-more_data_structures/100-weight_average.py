@@ -4,4 +4,14 @@
 # Returns 0 if the list is empty
 
 def weight_average(my_list=[]):
-    return list(map(lambda x: list(map(lambda y: y ** 2, x[:])), matrix))
+    if not my_list:
+        return o
+
+    aver = 0
+    num = 0
+
+    for weigh in my_list:
+        aver += weigh[0] * weigh[1]
+        num += weigh[1]
+
+    return (aver / num)
