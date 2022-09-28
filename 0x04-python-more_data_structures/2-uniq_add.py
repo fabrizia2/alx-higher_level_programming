@@ -4,7 +4,7 @@
 
 def uniq_add(my_list=[]):
     if not my_list:
-        return my_list
+        return 0
 
     new = set(my_list)
     summ = 0
