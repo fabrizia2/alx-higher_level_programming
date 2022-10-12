@@ -16,11 +16,15 @@ class Square:
         else:
             self.__size = size
 
+    def area(self):
+        """ Area of a square """
+        return (self.__size ** 2)
+
     @property
     def size(self):
         return self.__size
 
-    @size.setter
+    @property.setter
     def size(self, value):
 
         if type(value) is not int:
@@ -31,7 +35,3 @@ class Square:
 
         else:
             self.__size = value
-
-    def area(self):
-        """ Area of a square """
-        return (self.__size * self.__size)
