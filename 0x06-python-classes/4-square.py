@@ -26,7 +26,7 @@ class Square:
     def size(self):
         return self.__size
 
-    @property.setter
+    @size.setter
     """ to set it """
     def size(self, value):
 
@@ -38,3 +38,6 @@ class Square:
 
         else:
             self.__size = value
+
+    def area(self):
+        return (self.__size * self.__size)
