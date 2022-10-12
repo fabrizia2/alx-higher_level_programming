@@ -2,6 +2,7 @@
 
 """class SinglyLinkedList that defines a singly linked lis"""
 
+
 class Node:
     """Represent a node in a singly-linked list."""
 
