@@ -3,7 +3,7 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """Prints the user's first and last name 
+    """Prints the user's first and last name
     Raises:
         TypeError if firstname or lastname is not a string
     """
