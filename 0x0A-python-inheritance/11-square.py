@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """
 The inheritance from class Rectangle process.
 """
