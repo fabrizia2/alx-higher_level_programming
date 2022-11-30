@@ -1,4 +1,5 @@
 # 0x0E. SQL - More queries
+![logo](https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png)
 ## Resources
 ### Read or watch:
 
